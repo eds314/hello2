@@ -17,7 +17,7 @@ defmodule Hello2Web.Router do
 
   scope "/", Hello2Web do
     pipe_through :browser
-    get "hello2", Hello2Controller, :world
+    get "/hello2", Hello2Controller, :world
 
     get "/", PageController, :home
   end
